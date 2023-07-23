@@ -1,0 +1,64 @@
+.wrapper {
+    --header-search-border-radius: 92px;
+    --header-search-width-btn: 52px;
+    --header-search-height-input: 46px;
+
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding: 0px 24px 0px 16px;
+    height: var(--height-header-default);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+    background-color: var(--text-white);
+}
+
+.row-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    min-width: 300px;
+    align-items: center;
+}
+
+// Action
+.action {
+    display: flex;
+
+    .btn-icon {
+        margin-left: 16px;
+        cursor: pointer;
+        height: 32px;
+        padding: 3px 3px 0;
+        background-color: transparent;
+        font-size: 2.2rem;
+    }
+
+    .avt-user {
+        margin-left: 24px;
+        width: 32px;
+        height: 32px;
+        background: center no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    // Empty user
+    .btn-menu {
+        padding: 4px 8px;
+        background-color: transparent;
+        font-size: 2rem;
+        margin-left: 16px;
+        cursor: pointer;
+    }
+}

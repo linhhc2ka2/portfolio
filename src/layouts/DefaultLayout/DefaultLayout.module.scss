@@ -1,0 +1,29 @@
+.container-app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content-app {
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 100vw;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: var(--height-header-default);
+}
+
+.main-content {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    margin: 0 auto;
+    flex-shrink: 1;
+    min-width: 420px;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}

@@ -1,0 +1,66 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary: rgba(254, 44, 85, 1);
+    --text-color: rgba(22, 24, 35, 1);
+    --text-red: rgba(254, 44, 85, 1);
+    --text-white: #fff;
+    --text-black: #000;
+    // Layouts
+    --height-header-default: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow-y: overlay;
+}
+
+button,
+input,
+[tabIndex] {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+// Custom tppy
+.tippy-box {
+    background-color: rgba(84, 84, 84, 0.92);
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+}
