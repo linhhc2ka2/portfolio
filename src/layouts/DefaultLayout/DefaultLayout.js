@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
+
 import Header from '~/layouts/components/Header';
 import styles from './DefaultLayout.module.scss';
 import classNames from 'classnames/bind';
@@ -7,12 +9,11 @@ const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
     return (
-        <div className={cx('container-app')}>
+        <Container fluid>
             <Header />
-            <div className={cx('content-app')}>
-                <div className={cx('main-content')}>{children}</div>
-            </div>
-        </div>
+
+            <div className={cx('main-content')}>{children}</div>
+        </Container>
     );
 }
 

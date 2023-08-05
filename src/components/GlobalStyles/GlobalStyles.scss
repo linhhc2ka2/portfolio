@@ -1,14 +1,15 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-    --primary: rgba(254, 44, 85, 1);
-    --text-color: rgba(22, 24, 35, 1);
-    --text-red: rgba(254, 44, 85, 1);
-    --text-white: #fff;
-    --text-black: #000;
+    --text-color: #fff;
+    --color-main: #163ac7;
+    --price: #163ac7;
+    --hover: #16bcdc;
+    --menu: #ad0018;
+
     // Layouts
-    --height-header-default: 60px;
 }
 
 * {
@@ -38,10 +39,10 @@ html *::-webkit-scrollbar-track {
 body {
     color: var(--text-color);
     font-size: 1.6rem;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    overflow-y: overlay;
+    background-color: var(--color-main);
 }
 
 button,
@@ -54,13 +55,35 @@ input,
 a {
     color: var(--text-color);
     text-decoration: none;
+
+    &:hover {
+        fill: var(--hover);
+        color: var(--hover);
+    }
 }
 
-// Custom tppy
-.tippy-box {
-    background-color: rgba(84, 84, 84, 0.92);
+// Set css
+.px_default {
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
 
-    .tippy-arrow {
-        color: rgba(84, 84, 84, 0.92);
-    }
+.fw_100 {
+    font-weight: 100;
+}
+
+.fw_300 {
+    font-weight: 300;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+
+.fw_900 {
+    font-weight: 900;
 }

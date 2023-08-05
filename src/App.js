@@ -1,8 +1,12 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './routes';
 
 function App() {
+    useEffect(() => {
+        document.title = 'Huỳnh Chí Linh';
+    }, []);
+
     return (
         <Router>
             <Fragment>

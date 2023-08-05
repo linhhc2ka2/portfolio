@@ -1,5 +1,6 @@
 const routes = {
-    home: '/',
+    home: '/portfolio',
+    pages: '/pages/:id',
 };
 
 export default routes;
